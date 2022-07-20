@@ -1,14 +1,13 @@
 package com.g1rna;
 
-import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConsumerServerApplication {
+public class ProviderServer02Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerServerApplication.class, args);
+        SpringApplication.run(ProviderServer02Application.class, args);
     }
 
 }

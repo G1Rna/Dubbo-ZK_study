@@ -6,14 +6,16 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest(classes={ConsumerServerApplication.class})
 class ConsumerServerApplicationTests {
 
     @Autowired
     UserServiceImpl userService;
     @Test
     void contextLoads() {
-        userService.buyTicket();
+        for (int i = 0;i<25;i++){
+            userService.buyTicket();
+        }
     }
 
 }

@@ -61,6 +61,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+<!--    pom定位    -->
+<!--        <dependency>-->
+<!--            <groupId>com.G1Rna</groupId>-->
+<!--            <artifactId>provider-server</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
     <build>

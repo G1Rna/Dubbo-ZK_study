@@ -10,10 +10,10 @@ import org.springframework.stereotype.Component;
 @Component//使用dubbo后不要使用错误的@Service注解，如果要使用请使用dubbo包下的@Service*/
 /*使用org.apache.dubbo包下的dubbo只需要以下两个注解，新版本使用@DubboService*/
 @Component//参考上方注释
-@DubboService(interfaceClass = TicketService.class)
+@DubboService
 public class TicketServiceImpl implements TicketService {
     @Override
     public String getTicket() {
-        return "provider提供的票";
+        return "provider2提供的票";
     }
 }
